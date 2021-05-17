@@ -44,9 +44,9 @@
       // One to store the alt attribute of the image at the loop's current iteration, like so: YourImgVariableName[i].alt
       // One for the `event.target.value`
     for (let i = 0; i < shirtImageElements.length; i ++) {
-      const alt = "Blue shirt"[i].alt;
-      const shirt = e.target.value;
-      console.log(alt, shirt);
+      const shirt = shirtImageElements[i];
+      const alt = shirt.alt;
+      console.log(shirt,alt);
     }
     // 2d) Log out the two variables, refresh the page, and select a new shirt to confirm their values
     // 2e) Still inside the loop, create an if/else statement 
