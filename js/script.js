@@ -47,6 +47,11 @@
       const shirt = shirtImageElements[i];
       const alt = shirt.alt;
       console.log(shirt,alt);
+        if (shirt && alt === true) {
+          img[i].classList.add('chosen');
+        } else {
+          img[i].classList.remove('chosen');
+        }
     }
     // 2d) Log out the two variables, refresh the page, and select a new shirt to confirm their values
     // 2e) Still inside the loop, create an if/else statement 
