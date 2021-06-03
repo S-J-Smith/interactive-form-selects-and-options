@@ -47,10 +47,10 @@
       const shirt = shirtImageElements[i];
       const alt = shirt.alt;
       console.log(shirt,alt);
-        if (shirt && alt === true) {
-          img[i].classList.add('chosen');
+        if (alt === e.target.value) {
+          shirt.classList.add('chosen');
         } else {
-          img[i].classList.remove('chosen');
+          shirt.classList.remove('chosen');
         }
     }
     // 2d) Log out the two variables, refresh the page, and select a new shirt to confirm their values
